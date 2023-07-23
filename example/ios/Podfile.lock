@@ -1,0 +1,21 @@
+PODS:
+  - Flutter (1.0.0)
+  - hello_rust_ffi_plugin (0.0.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - hello_rust_ffi_plugin (from `.symlinks/plugins/hello_rust_ffi_plugin/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  hello_rust_ffi_plugin:
+    :path: ".symlinks/plugins/hello_rust_ffi_plugin/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  hello_rust_ffi_plugin: fa15c6a313965e8c6698c856abdca83a0e31f34d
+
+PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
+
+COCOAPODS: 1.12.1

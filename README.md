@@ -1,6 +1,6 @@
 # hello_rust_ffi_plugin
 
-A new Flutter FFI plugin project.
+A new Flutter FFI plugin project with Rust code in it.
 
 ## Getting Started
 
@@ -12,8 +12,7 @@ a specialized package that includes native code directly invoked with Dart FFI.
 
 This template uses the following structure:
 
-* `src`: Contains the native source code, and a CmakeFile.txt file for building
-  that source code into a dynamic library.
+* `rust`: Contains the native source code in Rust
 
 * `lib`: Contains the Dart code that defines the API of the plugin, and which
   calls into the native code using `dart:ffi`.
@@ -57,16 +56,7 @@ A plugin can have both FFI and method channels:
         ffiPlugin: true
 ```
 
-The native build systems that are invoked by FFI (and method channel) plugins are:
-
-* For Android: Gradle, which invokes the Android NDK for native builds.
-  * See the documentation in android/build.gradle.
-* For iOS and MacOS: Xcode, via CocoaPods.
-  * See the documentation in ios/hello_rust_ffi_plugin.podspec.
-  * See the documentation in macos/hello_rust_ffi_plugin.podspec.
-* For Linux and Windows: CMake.
-  * See the documentation in linux/CMakeLists.txt.
-  * See the documentation in windows/CMakeLists.txt.
+For more information about how Cargo build is integrated with Flutter tooling see [Cargokit repository](https://github.com/irondash/cargokit).
 
 ## Binding to native code
 
