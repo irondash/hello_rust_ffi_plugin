@@ -24,7 +24,9 @@ A new Flutter FFI plugin project.
     :script => 'sh $PODS_TARGET_SRCROOT/../cargokit/build_pod.sh ../rust hello_rust_ffi_plugin',
     :execution_position=> :before_compile,
     :input_files => ['${BUILT_PRODUCTS_DIR}/cargokit_phony'],
-    :output_files => ['${BUILT_PRODUCTS_DIR}/cargokit_phony_out'],
+    # Let XCode know that the static library referenced in -force_load below is
+    # created by this build step.
+    :output_files => ["${BUILT_PRODUCTS_DIR}/libhello_rust_ffi_plugin.a"],
   }
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
