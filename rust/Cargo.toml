@@ -1,3 +1,9 @@
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = "z"
+strip = "symbols"
+
 [package]
 name = "hello_rust_ffi_plugin"
 version = "0.1.0"
