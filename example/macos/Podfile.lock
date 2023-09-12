@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
-  hello_rust_ffi_plugin: fa15c6a313965e8c6698c856abdca83a0e31f34d
+  hello_rust_ffi_plugin: 68384607453c42fe5f940b30dd7a9e58f7f65840
 
 PODFILE CHECKSUM: 236401fc2c932af29a9fcf0e97baeeb2d750d367
 
