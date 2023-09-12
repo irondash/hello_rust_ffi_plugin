@@ -1,0 +1,7 @@
+cargo:
+  # For smaller binaries rebuilt the standard library with panic=abort
+  release:
+    toolchain: nightly
+    extra_flags:
+      - -Z
+      - build-std=panic_abort,std
